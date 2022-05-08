@@ -1,6 +1,11 @@
 <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white"/>
 
 # codeplus🔧
+>개발 배경
+>1. 매번 입력값 복사하여 입력하는것이 귀찮음
+>2. 입력값이 다건이면 더욱 귀찮음
+>3. 출력값 비교도 1,2와 같은 이유
+
 ## 백준 알고리즘 예제 크롤링
 1. Main class 내 풀이할 문제 번호 입력 (global static 변수)
 2. 풀이 패키지 생성 및 Main class에 import
