@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white"/>
+
 # codeplus🔧
 ## 백준 알고리즘 예제 크롤링
 1. Main class 내 풀이할 문제 번호 입력 (global static 변수)
