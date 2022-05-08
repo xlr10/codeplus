@@ -20,12 +20,32 @@ public class Brute_force_02 {
         while((tmp=br.readLine()) != null){
             int y=0;
             for(String e : tmp.split("")){
-                System.out.print(e+ " ");
+                //System.out.print(e+ " ");
                 bg[x][y++]=e;
             }
-            System.out.println();
+            //System.out.println();
             x++;
         }
+        //C C Y Y P P P <- 판별가능?
+//        String[] aa ={"C","C","Y","Y","P","P","P","C","Y"};
+//
+//        int bb_cnt = 0;
+//        int tmp_cnt=1;
+//        String c_tmp=aa[0];
+//        for(int a =1 ;a<aa.length;a++){
+//            //연속된 문자의 갯수 최대값
+//            if(!aa[a].equals(aa[a-1])){
+//                if(tmp_cnt>bb_cnt){
+//                    bb_cnt=tmp_cnt;
+//                }
+//                tmp_cnt=1;
+//            }else{
+//                //c_tmp=aa[a];
+//                tmp_cnt++;
+//            }
+//        }
+//        System.out.println(">>>>"+bb_cnt);
+
 
 
         for(int a=0;a<n;a++){
@@ -63,7 +83,15 @@ public class Brute_force_02 {
             for(int j =1 ;j<n;j++){
                 if(!bg[i][j-1].equals(bg[i][j])){
                     //System.out.println(bg[i][j-1]+", "+bg[i][j]);
-                    break;
+                    //break;
+                    //중간에 떨어지고 나중에 이어질때
+                    //C C Y Y P P P <- 판별가능?
+                    //continue;
+                    if(cnt<tmp_cnt){
+                        cnt=tmp_cnt;
+                    }
+                    //여기서 다시 초기화 안해서 2번째 제출시 틀림
+                    tmp_cnt=1;
                 }else{
                     tmp_cnt++;
                 }
@@ -78,7 +106,13 @@ public class Brute_force_02 {
             int tmp_cnt=1;
             for(int j =1 ;j<n;j++){
                 if(!bg[j-1][i].equals(bg[j][i])){
-                    break;
+                    //break;
+                    //continue;
+                    if(cnt<tmp_cnt){
+                        cnt=tmp_cnt;
+                    }
+                    //여기서 다시 초기화 안해서 2번째 제출시 틀림
+                    tmp_cnt=1;
                 }else{
                     tmp_cnt++;
                 }
