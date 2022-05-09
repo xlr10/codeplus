@@ -15,12 +15,14 @@ public class Main{
 
     ///////////////////////////////////num
     //static String ex_num ="2309";
-    static String ex_num ="3085";
+    //static String ex_num ="3085";
+    static String ex_num ="1476";
     ///////////////////////////////////num
 
     ///////////////////////////////////example
     //static Brute_force_01 example = new Brute_force_01();
-    static Brute_force_02 example = new Brute_force_02();
+    //static Brute_force_02 example = new Brute_force_02();
+    static Brute_force_03 example = new Brute_force_03();
     ///////////////////////////////////example
 
 
