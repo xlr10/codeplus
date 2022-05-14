@@ -17,14 +17,16 @@ public class Main{
     //static String ex_num ="2309";
     //static String ex_num ="3085";
     //static String ex_num ="1476";
-    static String ex_num ="1107";
+    //static String ex_num ="1107";
+    static String ex_num ="14500";
     ///////////////////////////////////num
 
     ///////////////////////////////////example
     //static Brute_force_01 example = new Brute_force_01();
     //static Brute_force_02 example = new Brute_force_02();
     //static Brute_force_03 example = new Brute_force_03();
-    static Brute_force_04 example = new Brute_force_04();
+    //static Brute_force_04 example = new Brute_force_04();
+    static Brute_force_05 example = new Brute_force_05();
     ///////////////////////////////////example
 
 
