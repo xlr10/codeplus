@@ -28,7 +28,7 @@ public class Brute_force_05 {
 //        System.out.println("n:"+n);
 //        System.out.println("m:"+m);
 
-        int[][] db = new int[n][m]; 
+        int[][] db = new int[n][m];
 
         for(int a=0; a<n; a++){
             String[] tmp = br.readLine().split(" ");
