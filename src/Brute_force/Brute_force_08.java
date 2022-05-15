@@ -15,6 +15,7 @@ public class Brute_force_08 {
         int[] num = {1,2,3};
 
         //1 2 3 으로 입력 값 조합(도합)
+
         for(int a=0;a<target;a++){
             input[a]=Integer.parseInt(br.readLine());
         }
