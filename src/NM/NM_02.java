@@ -14,15 +14,15 @@ public class NM_02 {
         int n = Integer.parseInt(tmp.split(" ")[0]);
         int m = Integer.parseInt(tmp.split(" ")[1]);
 
-        int[] num = new int[10];
-        boolean[] chk = new boolean[10];
+        int[] num = new int[n];
+        boolean[] chk = new boolean[n];
 
 
-        comb(0,1,n,m,num,chk);
+        comb(n,m,num,chk,0);
 
     }
-    public static void comb(int index, int start, int n, int m, int[] num, boolean[] chk){
-        if(index==m){
+    public static void comb(int n, int m, int[] num, boolean[] chk, int i){
+        if(i==m){
             //
             for(int e: num){
                 if(e!=0)    System.out.print(e+" ");
@@ -30,11 +30,17 @@ public class NM_02 {
             System.out.println();
             return;
         }else{
-            for(int a=start;a<=n;a++){
+            //for(int a=start;a<=n;a++){
+            for(int a=i;a<n;a++){
                 if(chk[a]) continue;
+                if(i>0){
+                    if(num[i-1] > (a+1)){
+                        continue;
+                    }
+                }
                 chk[a]=true;
-                num[index]=a;
-                comb(index+1,a+1,n,m,num,chk);
+                num[i]=a+1;
+                comb(n,m,num,chk,i+1);
                 chk[a]=false;
             }
         }
