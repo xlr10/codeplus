@@ -24,7 +24,8 @@ public class Main{
     //static String ex_num ="1748";
     //static String ex_num ="9095";
     //static String ex_num ="15649";
-    static String ex_num ="15650";
+    //static String ex_num ="15650";
+    static String ex_num ="15651";
     ///////////////////////////////////num
 
     ///////////////////////////////////example
@@ -36,7 +37,8 @@ public class Main{
     //static Brute_force_06 example = new Brute_force_06();
     //static Brute_force_07 example = new Brute_force_07();
     //static NM_01 example = new NM_01();
-    static NM_02 example = new NM_02();
+    //static NM_02 example = new NM_02();
+    static NM_03 example = new NM_03();
     ///////////////////////////////////example
 
 
