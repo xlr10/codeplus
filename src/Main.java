@@ -28,7 +28,8 @@ public class Main{
     //static String ex_num ="15651";
     //static String ex_num ="15652";
     //static String ex_num ="15654";
-    static String ex_num ="15655";
+    //static String ex_num ="15655";
+    static String ex_num ="15656";
     ///////////////////////////////////num
 
     ///////////////////////////////////example
@@ -44,7 +45,8 @@ public class Main{
     //static NM_03 example = new NM_03();
     //static NM_04 example = new NM_04();
     //static NM_05 example = new NM_05();
-    static NM_06 example = new NM_06();
+    //static NM_06 example = new NM_06();
+    static NM_07 example = new NM_07();
     ///////////////////////////////////example
 
 
