@@ -31,7 +31,10 @@ public class Main{
     //static String ex_num ="15655";
     //static String ex_num ="15656";
     //static String ex_num ="15657";
-    static String ex_num ="15663";
+    //static String ex_num ="15663";
+    //static String ex_num ="15664";
+    //static String ex_num ="15665";
+    static String ex_num ="15666";
     ///////////////////////////////////num
 
     ///////////////////////////////////example
@@ -50,7 +53,10 @@ public class Main{
     //static NM_06 example = new NM_06();
     //static NM_07 example = new NM_07();
     //static NM_08 example = new NM_08();
-    static NM_09 example = new NM_09();
+    //static NM_09 example = new NM_09();
+    //static NM_10 example = new NM_10();
+    //static NM_11 example = new NM_11();
+    static NM_12 example = new NM_12();
     ///////////////////////////////////example
 
 
