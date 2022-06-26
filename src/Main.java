@@ -4,6 +4,7 @@ import java.util.*;
 
 import Brute_force.*;
 import NM.*;
+import Permutation.*;
 import org.jsoup.*;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -34,7 +35,8 @@ public class Main{
     //static String ex_num ="15663";
     //static String ex_num ="15664";
     //static String ex_num ="15665";
-    static String ex_num ="15666";
+    //static String ex_num ="15666";
+    static String ex_num ="9095"; //""10972";
     ///////////////////////////////////num
 
     ///////////////////////////////////example
@@ -56,7 +58,8 @@ public class Main{
     //static NM_09 example = new NM_09();
     //static NM_10 example = new NM_10();
     //static NM_11 example = new NM_11();
-    static NM_12 example = new NM_12();
+    //static NM_12 example = new NM_12();
+    static PERM_01 example = new PERM_01();
     ///////////////////////////////////example
 
 
