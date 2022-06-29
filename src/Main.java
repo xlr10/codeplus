@@ -36,7 +36,7 @@ public class Main{
     //static String ex_num ="15664";
     //static String ex_num ="15665";
     //static String ex_num ="15666";
-    static String ex_num ="9095"; //""10972";
+    static String ex_num ="2309"; //""10972";
     ///////////////////////////////////num
 
     ///////////////////////////////////example
