@@ -40,97 +40,95 @@ public class PERM_01 {
 
         System.out.println(">>>>");
 
-        int[] num = {1,2,3,4};
-        int select_num = 3;
 
-        System.out.println("select_ORDERBY_DISTINCT");
-        select_ORDERBY_DISTINCT(num, new int[select_num], new boolean[num.length], 0, select_num);
-        System.out.println("cnt : " + select_ORDERBY_DISTINCT_cnt);
+        int[] num= {1,2,3,4};
+        int select_cnt = 3;
 
+        System.out.println("===================================");
         System.out.println("select_ORDERBY_unDISTINCT");
-        select_ORDERBY_unDISTINCT(num, new int[select_num], new boolean[num.length], 0, select_num);
-        System.out.println("cnt : " + select_ORDERBY_unDISTINCT_cnt);
+        select_ORDERBY_unDISTINCT(num,new int[select_cnt], new boolean[num.length], 0, select_cnt);
 
+        System.out.println("===================================");
+        System.out.println("select_ORDERBY_unDISTINCT");
+        select_ORDERBY_unDISTINCT(num,new int[select_cnt], new boolean[num.length], 0, select_cnt);
+
+        System.out.println("===================================");
         System.out.println("select_unORDERBY_DISTINCT");
-        select_unORDERBY_DISTINCT(num, 0, new boolean[num.length], 0, select_num);
-        System.out.println("cnt : " + select_unORDERBY_DISTINCT_cnt);
+        select_unORDERBY_DISTINCT(num,0, new boolean[num.length], 0, select_cnt);
 
+        System.out.println("===================================");
         System.out.println("select_unORDERBY_unDISTINCT");
-        select_unORDERBY_unDISTINCT(num, 0, new int[select_num], new boolean[num.length], 0, select_num);
-        System.out.println("cnt : " + select_unORDERBY_unDISTINCT_cnt);
-    }
-    public static int select_ORDERBY_DISTINCT_cnt     = 0;
-    public static int select_ORDERBY_unDISTINCT_cnt   = 0;
-    public static int select_unORDERBY_DISTINCT_cnt   = 0;
-    public static int select_unORDERBY_unDISTINCT_cnt = 0;
+        select_unORDERBY_unDISTINCT(num, new int[select_cnt],0, new boolean[num.length], 0, select_cnt);
 
-    public static void select_ORDERBY_DISTINCT(int[] num, int[] output, boolean[] chk , int depth, int select_num){
+    }
+    //순열 = 선택 후(1과 3을 선택) 정렬(1과 3을 한쌍으로 취급)   ->   (1,3) != (3,1)
+    static void select_ORDERBY_DISTINCT(int[] num, int[] output, boolean[] chk, int depth, int select_num){
         if(depth == select_num){
-            for(int e : output) System.out.print(e);
+            for(int e: output) System.out.print(e);
             System.out.println();
-            select_ORDERBY_DISTINCT_cnt++;
             return;
         }else{
             for(int a=0;a<num.length;a++){
                 if(chk[a]) continue;
                 chk[a]=true;
                 output[depth]=a+1;
-                select_ORDERBY_DISTINCT(num, output, chk, depth+1, select_num);
+                select_ORDERBY_DISTINCT(num,output, chk,depth+1,select_num);
                 chk[a]=false;
             }
         }
     }
 
-    public static void select_ORDERBY_unDISTINCT(int[] num, int[] output, boolean[] chk , int depth, int select_num){
+    //중복순열 = 선택 후 정렬 _중복허용
+    static void select_ORDERBY_unDISTINCT(int[] num, int[] output, boolean[] chk, int depth, int select_num){
         if(depth == select_num){
-            for(int e : output) System.out.print(e);
+            for(int e: output) System.out.print(e);
             System.out.println();
-            select_ORDERBY_unDISTINCT_cnt++;
             return;
         }else{
             for(int a=0;a<num.length;a++){
                 //if(chk[a]) continue;
                 chk[a]=true;
                 output[depth]=a+1;
-                select_ORDERBY_unDISTINCT(num, output, chk, depth+1, select_num);
+                select_ORDERBY_unDISTINCT(num,output, chk,depth+1,select_num);
                 chk[a]=false;
             }
         }
     }
 
-    public static void select_unORDERBY_DISTINCT(int[] num, int start, boolean[] chk, int depth, int select_num){
+    //조합 = 선택 후 비정렬(1과 3을 맵에 넣음?)     ->   (1,3) == (3,1)
+    static void select_unORDERBY_DISTINCT(int[] num, int start, boolean[] chk, int depth, int select_num){
         if(depth == select_num){
             for(int a=0;a<num.length;a++){
                 if(chk[a]) System.out.print(num[a]);
             }
             System.out.println();
-            select_unORDERBY_DISTINCT_cnt++;
             return;
         }else{
-            for(int a=start; a<num.length;a++){
+            for(int a=start;a<num.length;a++){
                 if(chk[a]) continue;
                 chk[a]=true;
-                select_unORDERBY_DISTINCT(num, a+1, chk, depth+1, select_num);
+                select_unORDERBY_DISTINCT(num,a+1, chk,depth+1,select_num);
                 chk[a]=false;
             }
         }
     }
 
-    public static void select_unORDERBY_unDISTINCT(int[] num, int start, int[] output, boolean[] chk, int depth, int select_num){
+    //조합 = 선택 후 비정렬 _중복허용
+    static void select_unORDERBY_unDISTINCT(int[] num, int[] output, int start, boolean[] chk, int depth, int select_num){
         if(depth == select_num){
             for(int e : output) System.out.print(e);
             System.out.println();
-            select_unORDERBY_unDISTINCT_cnt++;
             return;
         }else{
             for(int a=start;a<num.length;a++){
-                //if(chk[a])  continue;
-                chk[a] = true;
-                output[depth]=a+1;
-                select_unORDERBY_unDISTINCT(num, start, output, chk, depth+1, select_num);
-                chk[a] = false;
+                //if(chk[a]) continue;
+                chk[a]=true;
+                output[depth]=num[a];
+                select_unORDERBY_unDISTINCT(num,output, a, chk,depth+1,select_num);
+                chk[a]=false;
             }
         }
     }
+
 }
 
