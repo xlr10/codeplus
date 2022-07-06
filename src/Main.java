@@ -39,7 +39,8 @@ public class Main{
     //static String ex_num ="9095";
     //static String ex_num ="1759";
     //static String ex_num ="14501";
-    static String ex_num ="2529";
+    //static String ex_num ="2529";
+    static String ex_num ="1697";
     ///////////////////////////////////num
 
     ///////////////////////////////////example
@@ -65,7 +66,8 @@ public class Main{
     //static PERM_01 example = new PERM_01();
     //static PERM_02 example = new PERM_02();
     //static PERM_03 example = new PERM_03();
-    static PERM_04 example = new PERM_04();
+    //static PERM_04 example = new PERM_04();
+    static PERM_05 example = new PERM_05();
     ///////////////////////////////////example
 
 
