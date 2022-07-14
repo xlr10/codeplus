@@ -52,7 +52,9 @@ public class Main{
     //static String ex_num ="16198";
     //static String ex_num ="1987";
     //static String ex_num ="16948";
-    static String ex_num ="14502";
+    //static String ex_num ="14502";
+    //static String ex_num ="7575";
+    static String ex_num ="1032";
     ///////////////////////////////////num
 
     ///////////////////////////////////example
@@ -91,7 +93,9 @@ public class Main{
     //static DFS_BFS_09 example = new DFS_BFS_09();
     //static DFS_BFS_10 example = new DFS_BFS_10();
     //static DFS_BFS_11 example = new DFS_BFS_11();
-    static DFS_BFS_12 example = new DFS_BFS_12();
+    //static DFS_BFS_12 example = new DFS_BFS_12();
+    //static DFS_BFS_13 example = new DFS_BFS_13();
+    static DFS_BFS_14 example = new DFS_BFS_14();
     ///////////////////////////////////example
 
 
