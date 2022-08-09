@@ -6,6 +6,7 @@ import Brute_force.*;
 import NM.*;
 import Permutation.*;
 import DFS_BFS.*;
+import DP.*;
 import org.jsoup.*;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -54,7 +55,9 @@ public class Main{
     //static String ex_num ="16948";
     //static String ex_num ="14502";
     //static String ex_num ="7575";
-    static String ex_num ="1032";
+    //static String ex_num ="1032";
+    //static String ex_num ="1919";
+    static String ex_num ="1463";
     ///////////////////////////////////num
 
     ///////////////////////////////////example
@@ -95,7 +98,9 @@ public class Main{
     //static DFS_BFS_11 example = new DFS_BFS_11();
     //static DFS_BFS_12 example = new DFS_BFS_12();
     //static DFS_BFS_13 example = new DFS_BFS_13();
-    static DFS_BFS_14 example = new DFS_BFS_14();
+    //static DFS_BFS_14 example = new DFS_BFS_14();
+    //static DFS_BFS_15 example = new DFS_BFS_15();
+    static DP_01 example = new DP_01();
     ///////////////////////////////////example
 
 
