@@ -7,6 +7,7 @@ import NM.*;
 import Permutation.*;
 import DFS_BFS.*;
 import DP.*;
+import BNR_TR.*;
 import org.jsoup.*;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -58,7 +59,12 @@ public class Main{
     //static String ex_num ="1032";
     //static String ex_num ="1919";
     //static String ex_num ="1463";
-    static String ex_num ="11726";
+    //static String ex_num ="11727";
+    //static String ex_num ="11052";
+    //static String ex_num ="1260";
+    //static String ex_num ="2252";
+    //static String ex_num ="1920";
+    static String ex_num ="10816";
     ///////////////////////////////////num
 
     ///////////////////////////////////example
@@ -102,7 +108,13 @@ public class Main{
     //static DFS_BFS_14 example = new DFS_BFS_14();
     //static DFS_BFS_15 example = new DFS_BFS_15();
     //static DP_01 example = new DP_01();
-    static DP_02 example = new DP_02();
+    //static DP_02 example = new DP_02();
+    //static DP_03 example = new DP_03();
+    //static DP_04 example = new DP_04();
+    //static DP_05 example = new DP_05();
+
+    //static BNR_TR_01 example = new BNR_TR_01();
+    static BNR_TR_02 example = new BNR_TR_02();
     ///////////////////////////////////example
 
 
